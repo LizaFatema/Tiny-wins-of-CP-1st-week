@@ -1,1 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define ld long double
+#define FAST ios::sync_with_stdio(0), cin.tie(0);
+#define all(x) x.begin(), x.end()
+#define HA cout << "YES" << '\n'
+#define NA cout << "NO" << '\n'
+#define nl << '\n'
 
+int main()
+{
+    FAST int t, n, a;
+    cin >> t;
+
+    while (t--)
+    {
+        cin >> n;
+        int cnt = 0;
+        while (n--)
+        {
+            cin >> a;
+            cnt^=a;
+        }
+        cout << cnt nl;
+    }
+
+    return 0;
+}
